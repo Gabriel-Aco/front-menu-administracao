@@ -336,6 +336,11 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
+browserslist-config-single-spa@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/browserslist-config-single-spa/-/browserslist-config-single-spa-1.0.1.tgz#965f1f1606ba44671e649f410d8b8f735a327301"
+  integrity sha512-nqOxTbatv6FcdgBvUTuH4MuojMZwvskspz5Y4dmpVcKd0uaQY8KEl3iALWus16+AwPVe3BIerBNEgELyaHZcQg==
+
 browserslist@^4.21.3:
   version "4.21.4"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.21.4.tgz#e7496bbc67b9e39dd0f98565feccdcb0d4ff6987"
@@ -681,6 +686,18 @@ semver@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
+
+single-spa-react@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/single-spa-react/-/single-spa-react-5.0.0.tgz#8e25ff542c36c0ec466fdb8868abaa3127a1659c"
+  integrity sha512-gObC4D5tiu+dXty03y7hiFN/mvW8pjemww0UiM7mO8DWBS8JU+Y6L/Mlt9GptcD6kVu/mI+66IvhtQ736C0bVg==
+  dependencies:
+    browserslist-config-single-spa "^1.0.1"
+
+single-spa@^5.9.4:
+  version "5.9.4"
+  resolved "https://registry.yarnpkg.com/single-spa/-/single-spa-5.9.4.tgz#2a995b0784867a3f60ceb458de295ee67f045077"
+  integrity sha512-QkEoh0AzGuU82qnbUUk0ydF78QbU5wMKqKKJn7uUQfBiOYlRQEfIOpLM4m23Sab+kTOLI1kbYhYeiQ7fX5KVVw==
 
 source-map-js@^1.0.2:
   version "1.0.2"
