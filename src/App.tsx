@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import { RecoilRoot } from 'recoil'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,4 +32,10 @@ function App() {
   )
 }
 
-export default App
+export default function AppRecoil(){
+  return(
+    <RecoilRoot>
+      <App />
+    </RecoilRoot>
+  )
+}
