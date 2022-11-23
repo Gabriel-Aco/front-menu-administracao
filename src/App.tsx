@@ -1,41 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import { RecoilRoot } from 'recoil'
+import { Route, Routes, Navigate, Link, BrowserRouter } from 'react-router-dom'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+    return (
+      <BrowserRouter>
+        <Routes>
+          <Route path="*" element={<Navigate to="/" />}/>
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
-}
+          {/* Pagina inicial */}
+          <Route path="/administracao" element={<Link to={'/administracao/cadastroUsuario'}> Adm ir para cadastro </Link>}/>
 
-export default function AppRecoil(){
-  return(
-    <RecoilRoot>
-      <App />
-    </RecoilRoot>
-  )
+          {/* Rotas administração */}
+          <Route path="/administracao/cadastroUsuario" element={<Link to={'/administracao/listaUsuarios'}>Cadastro ir para Lista</Link>}/>
+          <Route path="/administracao/listaUsuarios" element={<Link to={'/administracao/editaUsuario'}>Lista ir para Edita</Link>}/>
+          <Route path="/administracao/editaUsuario/" element={<Link to={'/administracao'}>Edita ir para Adm</Link>}/>
+
+        </Routes>
+      </BrowserRouter>
+    )
 }
